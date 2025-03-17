@@ -1,7 +1,7 @@
-import type { PiniaPluginContext } from 'pinia'
-import type { Options } from './vanilla'
 import { BroadcastChannel as BroadcastChannelImpl } from 'broadcast-channel'
+import type { PiniaPluginContext } from 'pinia'
 import { serialize } from './utils'
+import type { Options } from './vanilla'
 
 function stateHasKey(key: string, $state: PiniaPluginContext['store']['$state']) {
   return Object.keys($state).includes(key)
